@@ -1,0 +1,14 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span><a mat-button routerLink="/home">HOME</a></span>
+    <span class="spacer">
+      <a mat-button routerLink="/regestration">REGISTER</a>
+      <a mat-button routerLink="/login">LOGIN</a>
+      <a mat-button routerLink="/data">DATA</a>
+      <a mat-button routerLink="/login">LOGOUT</a>
+    </span>
+  </mat-toolbar-row>
+</mat-toolbar>
+<div [@routeAnimations]="prepareRoute(outlet)">
+  <router-outlet #outlet="outlet"></router-outlet>
+</div>
